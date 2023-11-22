@@ -7,7 +7,7 @@
     "dev": "vite",
     "test": "jest --watch",
     "comment": "--detectOpenHandles",
-    "dev-server": "tsx watch src/server/server.ts",
+    "dev-server": "tsx watch src/server/entry.ts",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
