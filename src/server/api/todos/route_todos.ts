@@ -3,7 +3,7 @@ import { Todo } from "./model_todos"
 
 const router_todos = Router()
 
-router_todos.get("/",(req:Request,res:Response<Todo[]>)=>{
+router_todos.get("/todos",(req:Request,res:Response<Todo[]>)=>{
 	res.json([{
 		content:"learn typescript",
 		done: false

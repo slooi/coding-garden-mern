@@ -1,8 +1,9 @@
 import express from "express"
 import cors from "cors"
 import { errorHandler, notFound } from "./middlewares"
+import { router_apiV1 } from "./api/apiV1"
 
-const PORT = 3000
+
 const app = express()
 
 // Middlewares
@@ -18,9 +19,11 @@ app.get("/",(req,res)=>{
 	res.send("asd")
 })
 
+app.use(router_apiV1)
+
 // Middlewares
 app.use(notFound)
 app.use(errorHandler)
 
 
-app.listen(PORT,()=>{console.log("Listening on port "+PORT)})
+export {app}

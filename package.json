@@ -5,6 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "test": "jest --watch",
+    "comment": "--detectOpenHandles",
     "dev-server": "tsx watch src/server/server.ts",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
@@ -13,6 +15,7 @@
   "dependencies": {
     "@types/cors": "^2.8.17",
     "@types/express": "^4.17.21",
+    "@types/supertest": "^2.0.16",
     "cors": "^2.8.5",
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
@@ -34,6 +37,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.4",
     "jest": "^29.7.0",
+    "supertest": "^6.3.3",
     "ts-jest": "^29.1.1",
     "tsx": "^4.2.0",
     "typescript": "^5.3.2",
